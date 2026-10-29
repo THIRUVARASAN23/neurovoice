@@ -1,0 +1,2 @@
+# Zero third-party dependencies required.
+# Pure Python standard library used for Vercel serverless execution.

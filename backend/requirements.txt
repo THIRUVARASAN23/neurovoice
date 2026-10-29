@@ -1,0 +1,2 @@
+# NeuroNexus Python backend requirements
+# Standard library only

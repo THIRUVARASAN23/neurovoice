@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEURONEXUS | AI Academic Collaboration & NeuroFocus Learning Platform</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- Canvas Confetti for Gamification Celebrations -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#0a0c10] text-slate-100 antialiased min-h-screen flex flex-col font-sans selection:bg-cyan-500 selection:text-white">
+
+  <!-- Top Demo Bar & Instant Role Switcher -->
+  <div class="top-bar border-b border-slate-800 bg-[#0d1117] py-2 px-4 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3 text-xs">
+      <div class="flex items-center gap-2">
+        <span class="px-2 py-0.5 rounded font-black bg-cyan-500/20 text-cyan-400 border border-cyan-500/40 tracking-wider">DEX26031</span>
+        <span class="font-bold text-violet-300">Infinite Loopers</span>
+        <span class="text-slate-500 hidden md:inline">•</span>
+        <span class="text-slate-400 hidden md:inline">Sathyabama Hackathon Edition</span>
+      </div>
+
+      <!-- Demo Account Quick Switcher -->
+      <div class="flex items-center gap-2">
+        <span class="text-slate-400 text-xs hidden sm:inline">Active Role:</span>
+        <span id="header-role-badge" class="text-xs font-semibold px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">STUDENT</span>
+        <select id="header-role-select" onchange="window.neuronexusApp.switchUserRole(this.value)" class="bg-slate-800 text-xs text-slate-200 border border-slate-700 rounded px-2 py-1 outline-none focus:border-cyan-500">
+          <option value="usr_student_01">Aarav Sharma (Student)</option>
+          <option value="usr_student_02">Priya Nair (Student)</option>
+          <option value="usr_student_03">Rohan Mehta (Student)</option>
+          <option value="usr_student_04">Swathi K. (Student)</option>
+          <option value="usr_student_05">Vikram Anand (Student)</option>
+          <option value="usr_faculty_01">Dr. K. Ramanathan (Faculty)</option>
+          <option value="usr_mentor_01">Ananya Sen (Senior Mentor)</option>
+          <option value="usr_parent_01">Mrs. Sharma (Parent)</option>
+        </select>
+        <div class="flex items-center gap-2 pl-2 border-l border-slate-700">
+          <span id="header-user-avatar" class="w-6 h-6 rounded-full bg-cyan-600 flex items-center justify-center text-[10px] font-bold text-white">AS</span>
+          <span id="header-user-name" class="font-semibold text-xs text-slate-200 hidden md:inline">Aarav Sharma</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="bg-[#0f141c]/90 backdrop-blur-md border-b border-slate-800 sticky top-9 z-40">
+    <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
+      <!-- Brand Logo -->
+      <a href="#landing" onclick="window.neuronexusApp.navigate('landing')" class="flex items-center gap-3 cursor-pointer">
+        <img src="assets/logo.svg" alt="NEURONEXUS" class="w-9 h-9">
+        <div>
+          <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400 bg-clip-text text-transparent">NEURONEXUS</span>
+          <span class="hidden sm:inline-block ml-2 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider bg-cyan-500/10 text-cyan-400 rounded border border-cyan-500/20">Learning + Neuro</span>
+        </div>
+      </a>
+
+      <!-- Center Navigation Tabs -->
+      <nav class="hidden lg:flex items-center gap-1 text-sm font-medium" id="mainNav">
+        <a href="#landing" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors" data-target="landing" onclick="window.neuronexusApp.navigate('landing')">Home</a>
+        <a href="#dashboard" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors" data-target="dashboard" onclick="window.neuronexusApp.navigate('dashboard')">Dashboard</a>
+        <a href="#neurolearn" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors" data-target="neurolearn" onclick="window.neuronexusApp.navigate('neurolearn')">NeuroLearn Loop</a>
+        <a href="#courses" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors" data-target="courses" onclick="window.neuronexusApp.navigate('courses')">Courses</a>
+        <a href="#community" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors" data-target="community" onclick="window.neuronexusApp.navigate('community')">Community Q&A</a>
+        <a href="#ai-classroom" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors" data-target="ai-classroom" onclick="window.neuronexusApp.navigate('ai-classroom')">AI Classroom</a>
+        <a href="#arena" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors" data-target="arena" onclick="window.neuronexusApp.navigate('arena')">Arena</a>
+        <a href="#neuro-analysis" class="nav-link px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors" data-target="neuro-analysis" onclick="window.neuronexusApp.navigate('neuro-analysis')">Neuro Analysis</a>
+        <a href="#faculty" class="nav-link px-3 py-1.5 rounded-lg text-indigo-300 hover:bg-indigo-950/60 transition-colors" id="nav-faculty-link" data-target="faculty" onclick="window.neuronexusApp.navigate('faculty')">Faculty Hub</a>
+        <a href="#parents" class="nav-link px-3 py-1.5 rounded-lg text-amber-300 hover:bg-amber-950/60 transition-colors" id="nav-parents-link" data-target="parents" onclick="window.neuronexusApp.navigate('parents')">Parent Portal</a>
+        <a href="#mentors" class="nav-link px-3 py-1.5 rounded-lg text-teal-300 hover:bg-teal-950/60 transition-colors" data-target="mentors" onclick="window.neuronexusApp.navigate('mentors')">Mentors</a>
+        <a href="#privacy" class="nav-link px-3 py-1.5 rounded-lg text-slate-400 hover:text-cyan-400 transition-colors" data-target="privacy" onclick="window.neuronexusApp.navigate('privacy')">Privacy</a>
+      </nav>
+
+      <!-- Right Action CTA -->
+      <div class="flex items-center gap-2">
+        <button onclick="window.neuronexusApp.navigate('neurolearn')" class="btn-primary text-xs px-4 py-2 hidden sm:inline-flex">Start Loop</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Dynamic SPA View Container -->
+  <main id="main-content" class="flex-1"></main>
+
+  <!-- Modal Placeholders -->
+  <div id="community-modal-placeholder"></div>
+  <div id="mentor-modal-placeholder"></div>
+
+  <!-- Scripts in precise dependency order -->
+  <script src="js/seed-data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/neurolearn.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/oscilloscope.js"></script>
+  <script src="js/gamification.js"></script>
+  <script src="js/ai-classroom.js"></script>
+  <script src="js/community-qa.js"></script>
+  <script src="js/faculty.js"></script>
+  <script src="js/eeg-simulator.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    if (window.feather) feather.replace();
+  </script>
+</body>
+</html>
