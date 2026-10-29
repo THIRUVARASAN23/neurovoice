@@ -8,19 +8,22 @@ CORS handling, NeuroLearn Loop assessment, explainable AI recommendations,
 and BioAmp EXG telemetry processing.
 """
 
-from fastapi import FastAPI, HTTPException, status
+from fastapi import FastAPI, HTTPException, Request, status
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 from typing import List, Dict, Optional, Any
 from datetime import datetime
 
 # Initialize FastAPI application
+# root_path="" ensures docs work correctly behind Vercel's routing
 app = FastAPI(
     title="NEURONEXUS Platform API",
     description="Educational intelligence platform connecting verified academic performance, topic mastery, explainable AI recommendations, and contextual EEG analytics.",
     version="2.0.0",
     docs_url="/docs",
-    redoc_url="/redoc"
+    redoc_url="/redoc",
+    redirect_slashes=False,
 )
 
 # Enable CORS for SPA frontend
@@ -168,13 +171,10 @@ COMMUNITY_QA_DATA = [
 ]
 
 # -----------------------------------------------------------------------------
-# REST ENDPOINTS
+# HELPER: health response
 # -----------------------------------------------------------------------------
 
-@app.get("/api", tags=["System"])
-@app.get("/api/health", tags=["System"])
-def health_check():
-    """Health check endpoint confirming FastAPI backend server availability."""
+def _health_response():
     return {
         "status": "online",
         "service": "NEURONEXUS FastAPI Backend",
@@ -185,11 +185,29 @@ def health_check():
         "timestamp": datetime.utcnow().isoformat()
     }
 
+# -----------------------------------------------------------------------------
+# REST ENDPOINTS — registered with BOTH /api/... and bare /... paths
+# so the handler works whether Vercel passes the full path or strips the prefix
+# -----------------------------------------------------------------------------
+
+@app.get("/", tags=["System"])
+@app.get("/api", tags=["System"])
+@app.get("/api/", tags=["System"])
+@app.get("/health", tags=["System"])
+@app.get("/api/health", tags=["System"])
+def health_check():
+    """Health check endpoint confirming FastAPI backend server availability."""
+    return _health_response()
+
+
+@app.get("/courses", tags=["Courses"])
 @app.get("/api/courses", tags=["Courses"])
 def get_courses():
     """Returns the list of structured academic courses and topics."""
     return COURSES_DATA
 
+
+@app.get("/courses/{course_id}", tags=["Courses"])
 @app.get("/api/courses/{course_id}", tags=["Courses"])
 def get_course_detail(course_id: str):
     """Returns specific course metadata and syllabus topics."""
@@ -198,6 +216,8 @@ def get_course_detail(course_id: str):
             return c
     raise HTTPException(status_code=404, detail="Course not found")
 
+
+@app.post("/neurolearn/assess", response_model=QuizAttemptResult, tags=["NeuroLearn Loop"])
 @app.post("/api/neurolearn/assess", response_model=QuizAttemptResult, tags=["NeuroLearn Loop"])
 def assess_and_discover(submission: QuizSubmission):
     """
@@ -258,7 +278,6 @@ def assess_and_discover(submission: QuizSubmission):
     gaps.sort(key=lambda g: g.accuracy)
     percentage = round((correct_count / total_q) * 100, 1)
 
-    # Generate explainable revision steps
     recommendations: List[RevisionStep] = []
     step_num = 1
     if not gaps:
@@ -321,11 +340,15 @@ def assess_and_discover(submission: QuizSubmission):
         recommendations=recommendations
     )
 
+
+@app.get("/neuro/sessions", tags=["Neuro Analysis"])
 @app.get("/api/neuro/sessions", tags=["Neuro Analysis"])
 def get_neuro_sessions(user_id: str = "usr_student_01"):
     """Returns voluntary contextual EEG sessions with signal coverage quality indicators."""
     return NEURO_SESSIONS_DATA
 
+
+@app.get("/faculty/courses/{course_id}/analytics", tags=["Faculty"])
 @app.get("/api/faculty/courses/{course_id}/analytics", tags=["Faculty"])
 def get_faculty_analytics(course_id: str):
     """
@@ -344,6 +367,8 @@ def get_faculty_analytics(course_id: str):
         "recommended_intervention": "Conduct live interactive recitation on Morris thread pointer mechanics."
     }
 
+
+@app.get("/community/questions", tags=["Community Q&A"])
 @app.get("/api/community/questions", tags=["Community Q&A"])
 def get_community_questions():
     """Returns community discussion questions and peer/faculty verified answers."""
