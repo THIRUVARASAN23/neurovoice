@@ -2,9 +2,6 @@
   "name": "neuronexus",
   "version": "2.0.0",
   "private": true,
-  "description": "NEURONEXUS - FastAPI REST API & Educational Platform",
-  "scripts": {
-    "build": "echo Static frontend ready",
-    "vercel-build": "echo Static frontend ready"
-  }
+  "description": "NEURONEXUS - FastAPI REST API & Educational Platform"
 }
+
