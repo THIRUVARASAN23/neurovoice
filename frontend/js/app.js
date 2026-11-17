@@ -1,4 +1,4 @@
-﻿/**
+/**
  * NEURONEXUS - Main Application Controller & Single Page Application Router
  * Team: Infinite Loopers (Sathyabama Institute of Science and Technology)
  */
@@ -152,7 +152,7 @@ class NeuronexusApp {
         <section class="max-w-6xl mx-auto px-4 pt-16 pb-20 text-center">
           <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-950/40 border border-cyan-500/30 text-cyan-300 text-xs font-mono font-medium mb-6 animate-pulse-glow">
             <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
-            NEURONEXUS â€¢ SATHYABAMA HACKATHON EDITION â€¢ INFINITE LOOPERS
+            NEURONEXUS • SATHYABAMA HACKATHON EDITION • INFINITE LOOPERS
           </div>
 
           <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
@@ -260,7 +260,7 @@ class NeuronexusApp {
 
           <div class="mt-8 text-center">
             <button onclick="window.neuronexusApp.navigate('neurolearn')" class="btn-primary text-sm px-6 py-2.5">
-              Launch Interactive NeuroLearn Loop Demo â†’
+              Launch Interactive NeuroLearn Loop Demo →
             </button>
           </div>
         </section>
@@ -300,11 +300,11 @@ class NeuronexusApp {
         <!-- Footer -->
         <footer class="max-w-6xl mx-auto px-4 py-8 border-t border-slate-800 text-xs text-slate-400 flex flex-wrap justify-between items-center gap-4">
           <div>
-            <span class="font-bold text-slate-200">NEURONEXUS</span> â€¢ Developed for Hackathon by <strong class="text-cyan-400">Infinite Loopers</strong> (Sathyabama Institute of Science and Technology).
+            <span class="font-bold text-slate-200">NEURONEXUS</span> • Developed for Hackathon by <strong class="text-cyan-400">Infinite Loopers</strong> (Sathyabama Institute of Science and Technology).
           </div>
           <div class="flex items-center gap-4">
             <a href="#privacy" onclick="window.neuronexusApp.navigate('privacy')" class="hover:text-cyan-300">Privacy & Consent</a>
-            <span>â€¢</span>
+            <span>•</span>
             <span class="badge-demo">DEMO MODE ACTIVE</span>
           </div>
         </footer>
@@ -337,12 +337,12 @@ class NeuronexusApp {
           <div>
             <div class="flex items-center gap-2 mb-1">
               <span class="badge-demo">DEMO STUDENT</span>
-              <span class="text-xs text-slate-400 font-mono">${user.department} â€¢ ${user.semester}</span>
+              <span class="text-xs text-slate-400 font-mono">${user.department} • ${user.semester}</span>
               <span class="text-xs px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 font-mono font-bold">
                 LVL 4: Tree Navigator (2,850 XP)
               </span>
               <span class="text-xs px-2 py-0.5 rounded-full bg-rose-500/20 text-rose-300 font-mono font-bold">
-                ðŸ”¥ 7-Day Streak
+                🔥 7-Day Streak
               </span>
             </div>
             <h2 class="text-2xl font-bold text-white">Welcome back, ${user.name}</h2>
@@ -350,7 +350,7 @@ class NeuronexusApp {
           </div>
           <div class="flex items-center gap-3">
             <button onclick="window.neuronexusApp.navigate('arena')" class="btn-secondary text-sm px-4 py-2.5 border-amber-500/40 text-amber-300">
-              âš¡ NeuroBlitz Arena
+              ⚡ NeuroBlitz Arena
             </button>
             <button onclick="window.neuronexusApp.navigate('neurolearn')" class="btn-primary text-sm px-4 py-2.5">
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -393,10 +393,10 @@ class NeuronexusApp {
                 <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span class="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">LIVE MENTAL STATUS & BIOAMP OSCILLOSCOPE</span>
               </div>
-              <h3 class="text-lg font-bold text-white mt-0.5">Real-Time Brainwaves â€¢ Stress & Relaxation Telemetry</h3>
+              <h3 class="text-lg font-bold text-white mt-0.5">Real-Time Brainwaves • Stress & Relaxation Telemetry</h3>
             </div>
             <button onclick="window.neuronexusApp.navigate('neuro-analysis')" class="btn-outline-emerald text-xs px-3.5 py-1.5">
-              Open Full Neuro Analysis â†’
+              Open Full Neuro Analysis →
             </button>
           </div>
 
@@ -433,7 +433,7 @@ class NeuronexusApp {
           <!-- Dynamic Mental Status Alert -->
           <div id="dash-mental-alert-box" class="p-4 bg-emerald-950/40 rounded-2xl border border-emerald-500/40 flex items-start justify-between gap-4">
             <div class="flex items-start gap-3">
-              <span id="dash-alert-icon" class="text-2xl">ðŸ˜Œ</span>
+              <span id="dash-alert-icon" class="text-2xl">😌</span>
               <div>
                 <div class="flex items-center gap-2">
                   <span id="dash-alert-badge" class="text-xs font-mono font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
@@ -478,7 +478,7 @@ class NeuronexusApp {
               </p>
               <div class="flex items-center gap-3">
                 <button onclick="window.neuronexusApp.navigate('neurolearn')" class="btn-primary text-xs px-4 py-2">
-                  Launch Recommended Revision â†’
+                  Launch Recommended Revision →
                 </button>
                 <button onclick="window.neuronexusApp.navigate('courses')" class="btn-secondary text-xs px-4 py-2">
                   Browse Lesson Notes
@@ -497,7 +497,7 @@ class NeuronexusApp {
           <div class="p-6 bg-slate-900/50 rounded-2xl border border-slate-800">
             <div class="flex justify-between items-center mb-4">
               <h3 class="font-bold text-white">Active Courses</h3>
-              <button onclick="window.neuronexusApp.navigate('courses')" class="text-xs text-cyan-400 hover:underline">View All â†’</button>
+              <button onclick="window.neuronexusApp.navigate('courses')" class="text-xs text-cyan-400 hover:underline">View All →</button>
             </div>
             <div class="space-y-3">
               ${courses.map(c => `
@@ -508,7 +508,7 @@ class NeuronexusApp {
                       <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300">${c.badge}</span>
                     </div>
                     <div class="font-semibold text-slate-100 text-sm mt-0.5">${c.title}</div>
-                    <div class="text-xs text-slate-400">${c.instructor} â€¢ ${c.topics.length} topics</div>
+                    <div class="text-xs text-slate-400">${c.instructor} • ${c.topics.length} topics</div>
                   </div>
                   <button onclick="window.neuronexusApp.selectCourseAndNavigate('${c.id}')" class="btn-outline-cyan text-xs px-3 py-1.5">
                     Open
@@ -531,7 +531,7 @@ class NeuronexusApp {
                 <div class="p-3.5 bg-slate-800/40 rounded-xl border border-slate-700/50 flex items-center justify-between">
                   <div>
                     <div class="font-semibold text-slate-200 text-sm">Topic: ${att.topicId}</div>
-                    <div class="text-xs text-slate-400">${new Date(att.timestamp).toLocaleDateString()} â€¢ ${att.timeTakenSeconds}s duration</div>
+                    <div class="text-xs text-slate-400">${new Date(att.timestamp).toLocaleDateString()} • ${att.timeTakenSeconds}s duration</div>
                     <div class="text-xs text-cyan-400 mt-1">Score: ${att.score}/${att.total} (${att.percentage}%)</div>
                   </div>
                   <div class="text-right">
@@ -580,10 +580,10 @@ class NeuronexusApp {
         <!-- Breadcrumb & Tagline -->
         <div class="mb-6">
           <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 mb-2">
-            <span>NEURONEXUS</span> <span>â€º</span> <span>SIGNATURE WORKFLOW</span> <span>â€º</span> <span>NEUROLEARN LOOP</span>
+            <span>NEURONEXUS</span> <span>›</span> <span>SIGNATURE WORKFLOW</span> <span>›</span> <span>NEUROLEARN LOOP</span>
           </div>
           <h2 class="text-3xl font-extrabold text-white">The NeuroLearn Loop</h2>
-          <p class="text-sm text-slate-300">A rigorous 4-stage improvement cycle: Assess â†’ Discover â†’ Personalize â†’ Improve.</p>
+          <p class="text-sm text-slate-300">A rigorous 4-stage improvement cycle: Assess → Discover → Personalize → Improve.</p>
         </div>
 
         <!-- 4-Stage Progress Stepper -->
@@ -602,17 +602,17 @@ class NeuronexusApp {
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             <div class="p-4 bg-slate-800/60 rounded-xl border border-cyan-500/40 cursor-pointer">
               <div class="flex justify-between items-center mb-1">
-                <span class="text-xs font-mono text-cyan-400">CSE-301 â€¢ DSA</span>
+                <span class="text-xs font-mono text-cyan-400">CSE-301 • DSA</span>
                 <span class="text-xs px-2 py-0.5 rounded bg-cyan-900/60 text-cyan-200">Recommended Demo</span>
               </div>
               <h4 class="font-bold text-white">Trees & Binary Search Trees</h4>
               <p class="text-xs text-slate-300 mt-1">Covers BST operations, tree traversals, Morris algorithm, and AVL balancing.</p>
-              <div class="text-[11px] text-slate-400 mt-2">10 Evaluated MCQs â€¢ ${priorAttempts.length} prior attempt logged</div>
+              <div class="text-[11px] text-slate-400 mt-2">10 Evaluated MCQs • ${priorAttempts.length} prior attempt logged</div>
             </div>
 
             <div class="p-4 bg-slate-800/30 rounded-xl border border-slate-700/40 opacity-70">
               <div class="flex justify-between items-center mb-1">
-                <span class="text-xs font-mono text-slate-400">CSE-304 â€¢ DBMS</span>
+                <span class="text-xs font-mono text-slate-400">CSE-304 • DBMS</span>
                 <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400">Available</span>
               </div>
               <h4 class="font-bold text-slate-200">Normalization & BCNF</h4>
@@ -627,7 +627,7 @@ class NeuronexusApp {
             </div>
             <div class="flex items-center gap-3">
               <button onclick="window.neuronexusApp.startAssessment('crs_dsa_101', 'top_trees', false)" class="btn-primary text-sm px-6 py-2.5">
-                Launch Assessment Quiz (10 Qs) â†’
+                Launch Assessment Quiz (10 Qs) →
               </button>
             </div>
           </div>
@@ -703,16 +703,16 @@ class NeuronexusApp {
             <button onclick="window.neuronexusApp.navigateQuizQuestion(${qIndex - 1})"
                     ${qIndex === 0 ? 'disabled' : ''}
                     class="btn-secondary text-xs px-4 py-2 ${qIndex === 0 ? 'opacity-40 cursor-not-allowed' : ''}">
-              â† Previous
+              ← Previous
             </button>
 
             ${qIndex < totalQ - 1 ? `
               <button onclick="window.neuronexusApp.navigateQuizQuestion(${qIndex + 1})" class="btn-primary text-xs px-5 py-2">
-                Next Question â†’
+                Next Question →
               </button>
             ` : `
               <button onclick="window.neuronexusApp.submitCurrentQuiz()" class="btn-primary text-xs px-6 py-2 bg-gradient-to-r from-emerald-500 to-teal-600">
-                Submit Assessment âœ“
+                Submit Assessment ✓
               </button>
             `}
           </div>
@@ -725,7 +725,7 @@ class NeuronexusApp {
             <button onclick="window.neuronexusApp.autoFillQuiz('baseline')" class="text-cyan-400 hover:underline">
               Auto-fill 60% (Baseline with Gaps)
             </button>
-            <span>â€¢</span>
+            <span>•</span>
             <button onclick="window.neuronexusApp.autoFillQuiz('mastery')" class="text-emerald-400 hover:underline">
               Auto-fill 90% (Mastery / Retake)
             </button>
@@ -799,11 +799,11 @@ class NeuronexusApp {
 
         <!-- 4-Stage Progress Stepper (Updated) -->
         <div class="grid grid-cols-4 gap-2 mb-8 text-center text-xs font-semibold">
-          <div class="p-2.5 rounded-xl bg-slate-800 text-slate-300">1. ASSESS âœ“</div>
+          <div class="p-2.5 rounded-xl bg-slate-800 text-slate-300">1. ASSESS ✓</div>
           <div class="p-2.5 rounded-xl bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">2. DISCOVER</div>
           <div class="p-2.5 rounded-xl bg-teal-500/20 text-teal-300 border border-teal-500/40">3. PERSONALIZE</div>
           <div class="p-2.5 rounded-xl ${comparison.hasBaseline ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40' : 'bg-slate-800 text-slate-500'}">
-            4. IMPROVE ${comparison.hasBaseline ? 'âœ“' : ''}
+            4. IMPROVE ${comparison.hasBaseline ? '✓' : ''}
           </div>
         </div>
 
@@ -811,7 +811,7 @@ class NeuronexusApp {
         ${comparison.hasBaseline ? `
           <div class="p-6 bg-gradient-to-r from-emerald-950/40 via-slate-900 to-slate-900 rounded-2xl border border-emerald-500/40 mb-8">
             <div class="flex items-center gap-3 mb-2">
-              <span class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">âœ“</span>
+              <span class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">✓</span>
               <div>
                 <h3 class="text-lg font-bold text-emerald-300">Measured Learning Improvement Cycle Completed!</h3>
                 <p class="text-xs text-slate-300">Comparison derived from real stored assessment records.</p>
@@ -879,7 +879,7 @@ class NeuronexusApp {
                   </div>
                   <button onclick="window.neuronexusApp.executeRecommendation('${rec.targetAction}', '${rec.topicId}', '${rec.subtopic || ''}')"
                           class="btn-primary text-xs px-3.5 py-1.5">
-                    Execute Step â†’
+                    Execute Step →
                   </button>
                 </div>
                 <p class="text-xs text-slate-300 mb-2">${rec.description}</p>
@@ -901,9 +901,9 @@ class NeuronexusApp {
               return `
                 <div class="p-4 bg-slate-800/30 rounded-xl border ${isCorrect ? 'border-slate-800' : 'border-rose-900/40'}">
                   <div class="flex items-center justify-between text-xs mb-2">
-                    <span class="font-mono text-slate-400">Q${idx + 1} â€¢ ${q.subtopic}</span>
+                    <span class="font-mono text-slate-400">Q${idx + 1} • ${q.subtopic}</span>
                     <span class="px-2 py-0.5 rounded font-bold ${isCorrect ? 'bg-emerald-500/10 text-emerald-400' : 'bg-rose-500/10 text-rose-400'}">
-                      ${isCorrect ? 'Correct âœ“' : 'Incorrect âœ—'}
+                      ${isCorrect ? 'Correct ✓' : 'Incorrect ✗'}
                     </span>
                   </div>
                   <div class="text-sm font-medium text-slate-200 mb-2">${q.question}</div>
@@ -976,7 +976,7 @@ class NeuronexusApp {
                    class="p-3.5 rounded-xl border cursor-pointer transition-all ${c.id === this.selectedCourseId ? 'bg-cyan-950/40 border-cyan-400' : 'bg-slate-900/60 border-slate-800 hover:border-slate-700'}">
                 <div class="text-xs font-mono text-cyan-400">${c.code}</div>
                 <div class="font-semibold text-slate-200 text-sm">${c.title}</div>
-                <div class="text-xs text-slate-400 mt-1">${c.topics.length} topics â€¢ ${c.duration}</div>
+                <div class="text-xs text-slate-400 mt-1">${c.topics.length} topics • ${c.duration}</div>
               </div>
             `).join('')}
 
@@ -998,12 +998,12 @@ class NeuronexusApp {
             <div class="p-6 md:p-8 bg-slate-900/80 rounded-2xl border border-slate-800">
               <div class="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-slate-800 mb-6">
                 <div>
-                  <div class="text-xs font-mono text-cyan-400">${currentCourse.title} â€º Topic ${currentTopic.order || 1}</div>
+                  <div class="text-xs font-mono text-cyan-400">${currentCourse.title} › Topic ${currentTopic.order || 1}</div>
                   <h3 class="text-2xl font-bold text-white mt-1">${currentTopic.title}</h3>
                 </div>
                 <div class="flex items-center gap-3">
                   <button onclick="window.neuronexusApp.startAssessment('${currentCourse.id}', '${currentTopic.id}')" class="btn-primary text-xs px-4 py-2">
-                    Take Topic Quiz â†’
+                    Take Topic Quiz →
                   </button>
                 </div>
               </div>
@@ -1033,7 +1033,7 @@ class NeuronexusApp {
               <div class="mt-6">
                 <div class="flex items-center gap-2 mb-3">
                   <span class="w-2 h-2 rounded-full bg-rose-400 animate-pulse"></span>
-                  <span class="text-xs font-mono font-bold text-rose-300 uppercase tracking-wider">ðŸ“¹ Video Tutorial</span>
+                  <span class="text-xs font-mono font-bold text-rose-300 uppercase tracking-wider">📹 Video Tutorial</span>
                 </div>
                 <div class="text-xs text-slate-400 mb-3">${currentTopic.videoTitle || 'Watch this topic explained step-by-step'}</div>
                 <div class="relative rounded-2xl overflow-hidden border border-slate-700" style="aspect-ratio:16/9;">
@@ -1046,11 +1046,11 @@ class NeuronexusApp {
                     style="width:100%;height:100%;position:absolute;top:0;left:0;"
                   ></iframe>
                 </div>
-                <div class="mt-2 text-[11px] text-slate-500 italic">âš ï¸ Video requires internet. Sourced from YouTube for educational reference only.</div>
+                <div class="mt-2 text-[11px] text-slate-500 italic">⚠️ Video requires internet. Sourced from YouTube for educational reference only.</div>
               </div>
               ` : `
               <div class="mt-6 p-4 bg-slate-900/40 rounded-xl border border-dashed border-slate-700 text-xs text-slate-500 text-center">
-                ðŸ“¹ No video tutorial linked for this topic yet.
+                📹 No video tutorial linked for this topic yet.
               </div>
               `}
 
@@ -1059,7 +1059,7 @@ class NeuronexusApp {
                   Ready to test your knowledge? Launch the NeuroLearn Loop for this topic.
                 </div>
                 <button onclick="window.neuronexusApp.startAssessment('${currentCourse.id}', '${currentTopic.id}')" class="btn-primary text-xs px-5 py-2">
-                  Start Assessment Quiz â†’
+                  Start Assessment Quiz →
                 </button>
               </div>
             </div>
@@ -1143,7 +1143,7 @@ class NeuronexusApp {
                 <!-- Upvote Counter -->
                 <button onclick="window.neuronexusApp.upvoteQuestion('${q.id}')"
                         class="flex flex-col items-center justify-center p-2.5 rounded-xl bg-slate-800/80 border border-slate-700 hover:border-cyan-400 text-cyan-300 text-xs font-mono">
-                  <span>â–²</span>
+                  <span>▲</span>
                   <span class="font-bold text-sm">${q.votes}</span>
                 </button>
 
@@ -1151,7 +1151,7 @@ class NeuronexusApp {
                 <div class="flex-1">
                   <div class="flex flex-wrap items-center gap-2 mb-1.5">
                     <span class="text-xs px-2.5 py-0.5 rounded-full bg-cyan-950 text-cyan-400 border border-cyan-800/50">${q.category}</span>
-                    <span class="text-xs text-slate-400">Posted by <strong class="text-slate-200">${q.author.name}</strong> (${q.author.role}) â€¢ ${new Date(q.timestamp).toLocaleDateString()}</span>
+                    <span class="text-xs text-slate-400">Posted by <strong class="text-slate-200">${q.author.name}</strong> (${q.author.role}) • ${new Date(q.timestamp).toLocaleDateString()}</span>
                   </div>
 
                   <h3 onclick="window.neuronexusApp.openThreadModal('${q.id}')"
@@ -1166,7 +1166,7 @@ class NeuronexusApp {
                       ${(q.tags || []).map(t => `<span class="text-[11px] font-mono text-slate-400 bg-slate-800 px-2 py-0.5 rounded">#${t}</span>`).join('')}
                     </div>
                     <button onclick="window.neuronexusApp.openThreadModal('${q.id}')" class="text-cyan-400 hover:underline">
-                      ${q.answers.length} Answer${q.answers.length === 1 ? '' : 's'} â†’
+                      ${q.answers.length} Answer${q.answers.length === 1 ? '' : 's'} →
                     </button>
                   </div>
                 </div>
@@ -1209,9 +1209,9 @@ class NeuronexusApp {
             <div>
               <span class="text-xs px-2.5 py-0.5 rounded-full bg-cyan-950 text-cyan-400 border border-cyan-800/50">${q.category}</span>
               <h3 class="text-lg font-bold text-white mt-1">${q.title}</h3>
-              <div class="text-xs text-slate-400 mt-1">Asked by ${q.author.name} â€¢ ${new Date(q.timestamp).toLocaleString()}</div>
+              <div class="text-xs text-slate-400 mt-1">Asked by ${q.author.name} • ${new Date(q.timestamp).toLocaleString()}</div>
             </div>
-            <button onclick="document.getElementById('community-modal-placeholder').innerHTML=''" class="text-slate-400 hover:text-white text-lg font-bold">âœ•</button>
+            <button onclick="document.getElementById('community-modal-placeholder').innerHTML=''" class="text-slate-400 hover:text-white text-lg font-bold">✕</button>
           </div>
 
           <div class="text-xs text-slate-200 bg-slate-950/60 p-4 rounded-xl border border-slate-800 mb-6 leading-relaxed whitespace-pre-line">
@@ -1229,7 +1229,7 @@ class NeuronexusApp {
                   <div class="flex items-center gap-2">
                     <span class="font-bold text-slate-200">${ans.author.name}</span>
                     <span class="text-[11px] px-2 py-0.2 rounded ${ans.author.verified ? 'bg-cyan-900/60 text-cyan-300 border border-cyan-700' : 'bg-slate-700 text-slate-300'}">
-                      ${ans.author.role} ${ans.author.verified ? 'âœ“ Verified' : ''}
+                      ${ans.author.role} ${ans.author.verified ? '✓ Verified' : ''}
                     </span>
                   </div>
                   <span class="text-slate-400 font-mono text-[11px]">${new Date(ans.timestamp).toLocaleDateString()}</span>
@@ -1277,7 +1277,7 @@ class NeuronexusApp {
         <div class="w-full max-w-lg bg-slate-900 rounded-2xl border border-slate-700 p-6 md:p-8">
           <div class="flex justify-between items-center mb-4">
             <h3 class="text-lg font-bold text-white">Ask a Technical Question</h3>
-            <button onclick="document.getElementById('community-modal-placeholder').innerHTML=''" class="text-slate-400 hover:text-white font-bold">âœ•</button>
+            <button onclick="document.getElementById('community-modal-placeholder').innerHTML=''" class="text-slate-400 hover:text-white font-bold">✕</button>
           </div>
           <div class="space-y-4 text-xs">
             <div>
@@ -1336,7 +1336,7 @@ class NeuronexusApp {
       <div class="max-w-4xl mx-auto px-4 py-8">
         <div class="mb-6">
           <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 mb-2">
-            <span>NEURONEXUS</span> <span>â€º</span> <span>AI CLASSROOM</span>
+            <span>NEURONEXUS</span> <span>›</span> <span>AI CLASSROOM</span>
           </div>
           <h2 class="text-3xl font-bold text-white">Socratic AI Study Assistant</h2>
           <p class="text-sm text-slate-300">Targeted explanations, step-by-step traces, mistake diagnostics, and practice questions.</p>
@@ -1345,16 +1345,16 @@ class NeuronexusApp {
         <!-- Quick Action Prompt Pills -->
         <div class="flex flex-wrap gap-2.5 mb-6">
           <button onclick="window.neuronexusApp.runAIPreset('explain_mistakes', 'Explain My Recent Quiz Mistakes')" class="btn-secondary text-xs px-3.5 py-2 border-rose-500/30 text-rose-300">
-            ðŸ” Explain My Quiz Mistakes
+            🔍 Explain My Quiz Mistakes
           </button>
           <button onclick="window.neuronexusApp.runAIPreset('simplify', 'Simplify Concept: Binary Search Trees')" class="btn-secondary text-xs px-3.5 py-2 border-cyan-500/30 text-cyan-300">
-            ðŸ’¡ Simplify Concept with Analogy
+            💡 Simplify Concept with Analogy
           </button>
           <button onclick="window.neuronexusApp.runAIPreset('step_by_step', 'Step-by-Step AVL Rotation Walkthrough')" class="btn-secondary text-xs px-3.5 py-2 border-indigo-500/30 text-indigo-300">
-            ðŸªœ Step-by-Step Algorithm Trace
+            🪜 Step-by-Step Algorithm Trace
           </button>
           <button onclick="window.neuronexusApp.runAIPreset('practice', 'Generate 3 Practice Questions')" class="btn-secondary text-xs px-3.5 py-2 border-teal-500/30 text-teal-300">
-            ðŸŽ¯ Generate 3 Practice Questions
+            🎯 Generate 3 Practice Questions
           </button>
         </div>
 
@@ -1379,7 +1379,7 @@ class NeuronexusApp {
                    onkeydown="if(event.key==='Enter') window.neuronexusApp.submitAICustomPrompt()"
                    class="flex-1 bg-slate-950 text-slate-200 text-xs px-4 py-3 rounded-xl border border-slate-700 focus:outline-none focus:border-cyan-400" />
             <button onclick="window.neuronexusApp.submitAICustomPrompt()" class="btn-primary text-xs px-5 py-3">
-              Ask AI â†’
+              Ask AI →
             </button>
           </div>
         </div>
@@ -1413,7 +1413,7 @@ class NeuronexusApp {
     historyContainer.innerHTML += `
       <div class="p-4 bg-slate-800/60 rounded-xl border border-slate-700/60 text-xs text-slate-200 space-y-2 leading-relaxed">
         <div class="flex items-center justify-between text-[11px] text-cyan-400 font-mono">
-          <span>AI Response â€¢ ${res.mode.toUpperCase()}</span>
+          <span>AI Response • ${res.mode.toUpperCase()}</span>
           <span>${res.source}</span>
         </div>
         <div class="whitespace-pre-line">${res.response}</div>
@@ -1453,7 +1453,7 @@ class NeuronexusApp {
                 <span class="text-xs font-mono font-bold px-2.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
                   ${state.levelTitle.toUpperCase()}
                 </span>
-                <span class="text-xs text-emerald-400 font-mono">âš¡ 1.5x Zen XP Multiplier</span>
+                <span class="text-xs text-emerald-400 font-mono">⚡ 1.5x Zen XP Multiplier</span>
               </div>
               <h2 class="text-2xl font-bold text-white">Gamified Learning Arena</h2>
               <p class="text-xs text-slate-300 mt-0.5">Earn XP through quizzes, master daily study streaks, and conquer the 60s NeuroBlitz challenge.</p>
@@ -1468,7 +1468,7 @@ class NeuronexusApp {
             </div>
             <div class="text-center p-3 px-4 bg-slate-950/80 rounded-2xl border border-slate-800">
               <div class="text-xs text-slate-400 font-mono uppercase">Study Streak</div>
-              <div class="text-xl font-mono font-bold text-rose-400">ðŸ”¥ ${state.streakDays} Days</div>
+              <div class="text-xl font-mono font-bold text-rose-400">🔥 ${state.streakDays} Days</div>
             </div>
           </div>
         </div>
@@ -1492,7 +1492,7 @@ class NeuronexusApp {
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span>RAPID TIME-TRIAL CHALLENGE</span>
               </div>
-              <h3 class="text-xl font-bold text-white">âš¡ NeuroBlitz: 60-Second Algorithmic Speedrun</h3>
+              <h3 class="text-xl font-bold text-white">⚡ NeuroBlitz: 60-Second Algorithmic Speedrun</h3>
               <p class="text-xs text-slate-300 mt-0.5">Test your reflex recall on BST invariants, AVL balancing, and database normal forms. Build combo streaks for bonus XP!</p>
             </div>
             <div class="text-right">
@@ -1504,13 +1504,13 @@ class NeuronexusApp {
           <!-- NeuroBlitz Game Stage -->
           <div id="neuroblitz-stage" class="p-6 bg-slate-950/90 rounded-2xl border border-slate-800 text-center">
             <div class="max-w-md mx-auto py-6">
-              <div class="text-4xl mb-3">âš¡</div>
+              <div class="text-4xl mb-3">⚡</div>
               <h4 class="text-lg font-bold text-white mb-2">Ready for the 60-Second Speedrun?</h4>
               <p class="text-xs text-slate-400 mb-6 leading-relaxed">
                 Rapid True / False questions testing fundamental computer science invariants. Combo multipliers increase points up to 4x!
               </p>
               <button onclick="window.neuronexusApp.startNeuroBlitzGame()" class="btn-primary text-sm px-8 py-3">
-                Start 60s NeuroBlitz Speedrun â†’
+                Start 60s NeuroBlitz Speedrun →
               </button>
             </div>
           </div>
@@ -1577,7 +1577,7 @@ class NeuronexusApp {
                   </div>
                   <div class="text-right">
                     <span class="font-mono font-bold text-xs text-amber-400">${u.xp.toLocaleString()} XP</span>
-                    <span class="text-[10px] text-rose-400 block font-mono">ðŸ”¥ ${u.streak}d</span>
+                    <span class="text-[10px] text-rose-400 block font-mono">🔥 ${u.streak}d</span>
                   </div>
                 </div>
               `).join('')}
@@ -1626,13 +1626,13 @@ class NeuronexusApp {
         <!-- Top Telemetry Header -->
         <div class="flex items-center justify-between text-xs mb-3 font-mono">
           <div class="flex items-center gap-2">
-            <span class="text-rose-400 font-bold">â±ï¸ <span id="blitz-timer-val">${game.timeLeftSeconds}s</span></span>
-            <span>â€¢</span>
+            <span class="text-rose-400 font-bold">⏱️ <span id="blitz-timer-val">${game.timeLeftSeconds}s</span></span>
+            <span>•</span>
             <span class="text-amber-400 font-bold">SCORE: <span id="blitz-score-val">${game.score}</span></span>
           </div>
           <div>
             <span class="px-2 py-0.5 rounded font-bold ${game.combo >= 2 ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30 animate-pulse' : 'bg-slate-800 text-slate-400'}">
-              ${game.combo >= 2 ? `ðŸ”¥ ${game.combo}x COMBO!` : '1x Multiplier'}
+              ${game.combo >= 2 ? `🔥 ${game.combo}x COMBO!` : '1x Multiplier'}
             </span>
           </div>
         </div>
@@ -1655,10 +1655,10 @@ class NeuronexusApp {
         <!-- True / False Action Buttons -->
         <div class="grid grid-cols-2 gap-4">
           <button onclick="window.neuronexusApp.handleBlitzAnswer(true)" class="p-4 bg-emerald-950/40 border border-emerald-500/50 hover:bg-emerald-900/50 text-emerald-300 rounded-2xl font-bold text-base transition-all hover:scale-105 cursor-pointer shadow-lg">
-            âœ“ TRUE
+            ✓ TRUE
           </button>
           <button onclick="window.neuronexusApp.handleBlitzAnswer(false)" class="p-4 bg-rose-950/40 border border-rose-500/50 hover:bg-rose-900/50 text-rose-300 rounded-2xl font-bold text-base transition-all hover:scale-105 cursor-pointer shadow-lg">
-            âœ— FALSE
+            ✗ FALSE
           </button>
         </div>
 
@@ -1675,8 +1675,8 @@ class NeuronexusApp {
     const feedback = document.getElementById("blitz-feedback");
     if (feedback) {
       feedback.innerHTML = res.isCorrect
-        ? `<span class="text-emerald-400 font-bold">âœ“ CORRECT! (+${res.combo * 50} pts)</span> â€¢ <span class="text-slate-300">${res.explanation}</span>`
-        : `<span class="text-rose-400 font-bold">âœ— COMBO BROKEN!</span> â€¢ <span class="text-slate-300">${res.explanation}</span>`;
+        ? `<span class="text-emerald-400 font-bold">✓ CORRECT! (+${res.combo * 50} pts)</span> • <span class="text-slate-300">${res.explanation}</span>`
+        : `<span class="text-rose-400 font-bold">✗ COMBO BROKEN!</span> • <span class="text-slate-300">${res.explanation}</span>`;
     }
 
     // Refresh question card after brief moment
@@ -1692,7 +1692,7 @@ class NeuronexusApp {
 
     stage.innerHTML = `
       <div class="max-w-md mx-auto py-6">
-        <div class="text-4xl mb-2">ðŸ†</div>
+        <div class="text-4xl mb-2">🏆</div>
         <h4 class="text-2xl font-bold text-white mb-1">Challenge Completed!</h4>
         <p class="text-xs text-slate-400 mb-6">60-second rapid algorithmic recall speedrun finished.</p>
 
@@ -1703,7 +1703,7 @@ class NeuronexusApp {
           </div>
           <div>
             <div class="text-xs text-slate-400 font-mono uppercase">Max Combo</div>
-            <div class="text-xl font-mono font-bold text-emerald-400">ðŸ”¥ ${results.maxCombo}x</div>
+            <div class="text-xl font-mono font-bold text-emerald-400">🔥 ${results.maxCombo}x</div>
           </div>
           <div>
             <div class="text-xs text-slate-400 font-mono uppercase">XP Earned</div>
@@ -1713,7 +1713,7 @@ class NeuronexusApp {
 
         <div class="flex justify-center gap-3">
           <button onclick="window.neuronexusApp.startNeuroBlitzGame()" class="btn-primary text-xs px-5 py-2.5">
-            Play Again âš¡
+            Play Again ⚡
           </button>
           <button onclick="window.neuronexusApp.renderArenaView()" class="btn-secondary text-xs px-5 py-2.5">
             Back to Arena
@@ -1739,7 +1739,7 @@ class NeuronexusApp {
           <div>
             <div class="inline-flex items-center gap-2 text-xs font-mono text-emerald-400 mb-1">
               <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span>BIOAMP EXG INTEGRATION â€¢ 250Hz LIVE STREAM</span>
+              <span>BIOAMP EXG INTEGRATION • 250Hz LIVE STREAM</span>
             </div>
             <h2 class="text-3xl font-bold text-white">Mental Status: Stress, Relaxation & Live Brainwaves</h2>
             <p class="text-sm text-slate-300">Continuous biopotential EEG oscilloscope, real-time stress/relaxation indices, and cognitive workload alerts.</p>
@@ -1751,7 +1751,7 @@ class NeuronexusApp {
 
         <!-- Science & Safety Warning Banner -->
         <div class="p-3.5 bg-slate-900/90 rounded-2xl border border-slate-700/60 mb-6 flex items-start gap-3 text-xs text-slate-300">
-          <div class="text-amber-400 text-lg">ðŸ’¡</div>
+          <div class="text-amber-400 text-lg">💡</div>
           <div>
             <strong class="text-slate-100">Personal Study Assistant (Non-Diagnostic):</strong> Stress and relaxation metrics reflect estimated cortical biopotentials and are strictly private to the student. They guide healthy study rhythms and are <strong>never</strong> shared with faculty for grading or disciplinary review.
           </div>
@@ -1762,7 +1762,7 @@ class NeuronexusApp {
           <div class="p-5 bg-slate-900/90 rounded-3xl border border-slate-800 glow-card">
             <div class="flex items-center justify-between mb-2">
               <div class="flex items-center gap-2">
-                <span class="text-lg">ðŸ§˜</span>
+                <span class="text-lg">🧘</span>
                 <span class="text-xs font-mono font-bold text-slate-300 uppercase tracking-wider">RELAXATION STATE</span>
               </div>
               <span id="neuro-relax-val" class="text-sm font-mono font-bold text-emerald-400">88% (DEEPLY RELAXED)</span>
@@ -1778,7 +1778,7 @@ class NeuronexusApp {
           <div class="p-5 bg-slate-900/90 rounded-3xl border border-slate-800 glow-card">
             <div class="flex items-center justify-between mb-2">
               <div class="flex items-center gap-2">
-                <span class="text-lg">âš¡</span>
+                <span class="text-lg">⚡</span>
                 <span class="text-xs font-mono font-bold text-slate-300 uppercase tracking-wider">COGNITIVE STRESS LEVEL</span>
               </div>
               <span id="neuro-stress-val" class="text-sm font-mono font-bold text-emerald-400">14% (LOW / OPTIMAL)</span>
@@ -1796,13 +1796,13 @@ class NeuronexusApp {
         <div id="live-cognitive-alert-box" class="mb-6">
           <div class="p-5 bg-emerald-950/40 rounded-3xl border border-emerald-500/50 flex items-start justify-between gap-4 alert-card">
             <div class="flex items-start gap-3">
-              <span id="alert-icon" class="text-3xl">ðŸ˜Œ</span>
+              <span id="alert-icon" class="text-3xl">😌</span>
               <div>
                 <div class="flex items-center gap-2">
                   <span id="alert-badge" class="text-xs font-mono font-bold px-2.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
                     MENTAL STATUS: DEEPLY RELAXED
                   </span>
-                  <span id="alert-sub" class="text-xs text-slate-400 font-mono">Stress: 14% (LOW) â€¢ Relaxation: 88% (HIGH)</span>
+                  <span id="alert-sub" class="text-xs text-slate-400 font-mono">Stress: 14% (LOW) • Relaxation: 88% (HIGH)</span>
                 </div>
                 <h4 id="alert-title" class="text-base font-bold text-white mt-1">Calm & Receptive Learning State</h4>
                 <p id="alert-message" class="text-xs text-slate-200 mt-1 leading-relaxed">
@@ -1824,11 +1824,11 @@ class NeuronexusApp {
                 <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
                 <h3 class="font-bold text-white text-base">Oscilloscope Screen: Fp1-Fp2 Differential Trace</h3>
               </div>
-              <p class="text-xs text-slate-400">Continuous 60 FPS phosphor sweep â€¢ Real-time microvolts (Î¼V)</p>
+              <p class="text-xs text-slate-400">Continuous 60 FPS phosphor sweep • Real-time microvolts (μV)</p>
             </div>
             <div class="flex items-center gap-2">
               <button onclick="window.neuronexusApp.toggleOscilloscopeAudio()" id="btn-audio-toggle" class="btn-secondary text-xs px-3 py-1.5 border-slate-700">
-                ðŸ”Š Audio Alert Chimes: ON
+                🔊 Audio Alert Chimes: ON
               </button>
             </div>
           </div>
@@ -1845,19 +1845,19 @@ class NeuronexusApp {
             </div>
             <div class="flex flex-wrap gap-2">
               <button onclick="window.neuronexusApp.setMentalScenario('RELAX')" class="btn-secondary text-xs px-3 py-2 border-emerald-500/40 text-emerald-300 hover:bg-emerald-950/40">
-                ðŸ˜Œ Deep Relaxation (Stress: 14% | Relax: 88%)
+                😌 Deep Relaxation (Stress: 14% | Relax: 88%)
               </button>
               <button onclick="window.neuronexusApp.setMentalScenario('FOCUS')" class="btn-secondary text-xs px-3 py-2 border-teal-500/40 text-teal-300 hover:bg-teal-950/40">
-                ðŸŽ¯ Focused Flow (Stress: 28% | Relax: 66%)
+                🎯 Focused Flow (Stress: 28% | Relax: 66%)
               </button>
               <button onclick="window.neuronexusApp.setMentalScenario('STRESS')" class="btn-secondary text-xs px-3 py-2 border-rose-500/40 text-rose-300 hover:bg-rose-950/40">
-                âš¡ High Stress Alert (Stress: 86% | Relax: 12%)
+                ⚡ High Stress Alert (Stress: 86% | Relax: 12%)
               </button>
               <button onclick="window.neuronexusApp.setMentalScenario('FATIGUE')" class="btn-secondary text-xs px-3 py-2 border-amber-500/40 text-amber-300 hover:bg-amber-950/40">
-                ðŸ¥± Cognitive Fatigue (Stress: 36% | Relax: 42%)
+                🥱 Cognitive Fatigue (Stress: 36% | Relax: 42%)
               </button>
               <button onclick="window.neuronexusApp.setMentalScenario('INSUFFICIENT')" class="btn-secondary text-xs px-3 py-2 border-slate-700 text-slate-300 hover:bg-slate-800">
-                âš ï¸ Insufficient Signal (&lt;70% Quality)
+                ⚠️ Insufficient Signal (&lt;70% Quality)
               </button>
             </div>
           </div>
@@ -1868,7 +1868,7 @@ class NeuronexusApp {
           <div class="flex flex-wrap items-center justify-between gap-4 mb-3">
             <div>
               <div class="flex items-center gap-2">
-                <span class="text-lg">ðŸŒ¬ï¸</span>
+                <span class="text-lg">🌬️</span>
                 <h3 class="font-bold text-white text-base">Box Breathing Calming Tool (4-7-8 Rhythm)</h3>
               </div>
               <p class="text-xs text-slate-400">Scientifically down-regulates cortisol and lowers cognitive stress in 2 minutes.</p>
@@ -2009,7 +2009,7 @@ class NeuronexusApp {
 
     if (icon) icon.textContent = alertData.icon;
     if (badge) badge.textContent = alertData.badge;
-    if (sub) sub.textContent = `Stress: ${alertData.stressLevel} â€¢ Relaxation: ${alertData.relaxationLevel}`;
+    if (sub) sub.textContent = `Stress: ${alertData.stressLevel} • Relaxation: ${alertData.relaxationLevel}`;
     if (title) title.textContent = alertData.title;
     if (msg) msg.textContent = alertData.message;
     if (rec) rec.innerHTML = `<strong>Recommendation:</strong> ${alertData.recommendation}`;
@@ -2114,8 +2114,8 @@ class NeuronexusApp {
     const btn = document.getElementById("btn-audio-toggle");
     if (btn) {
       btn.textContent = window.brainwaveOscilloscope.soundEnabled
-        ? "ðŸ”Š Audio Alert Chimes: ON"
-        : "ðŸ”‡ Audio Alert Chimes: OFF";
+        ? "🔊 Audio Alert Chimes: ON"
+        : "🔇 Audio Alert Chimes: OFF";
     }
   }
 
@@ -2145,7 +2145,7 @@ class NeuronexusApp {
             <h2 class="text-3xl font-bold text-white">Course Overview: ${analytics.course.title}</h2>
             <p class="text-sm text-slate-300">Aggregated academic mastery patterns and identified class-level curriculum bottlenecks.</p>
           </div>
-          <span class="badge-demo">INSTRUCTOR VIEW â€¢ DR. K. RAMANATHAN</span>
+          <span class="badge-demo">INSTRUCTOR VIEW • DR. K. RAMANATHAN</span>
         </div>
 
         <!-- Privacy Shield Notice -->
@@ -2239,7 +2239,7 @@ class NeuronexusApp {
             <label class="text-xs text-slate-400 font-mono uppercase">Select Student:</label>
             <select id="faculty-student-selector" onchange="window.neuronexusApp.renderFacultyStudentCard(this.value)"
                     class="bg-slate-950 text-slate-200 text-xs px-3 py-2 rounded-xl border border-slate-700 focus:outline-none focus:border-indigo-400 cursor-pointer">
-              <option value="">â€” Choose a student â€”</option>
+              <option value="">— Choose a student —</option>
               ${window.NEURONEXUS_SEED.users.filter(u => u.role === 'student').map(s => `
                 <option value="${s.id}">${s.name} (${s.department}, ${s.semester})</option>
               `).join('')}
@@ -2265,11 +2265,11 @@ class NeuronexusApp {
     if (!student) return;
 
     const stateConfig = {
-      FOCUS:  { color: "emerald", label: "FOCUSED", emoji: "ðŸŽ¯", desc: "Actively engaged in learning material", stress: "12% (LOW)",  relax: "84% (HIGH)" },
-      RELAX:  { color: "teal",    label: "RELAXED",  emoji: "ðŸ˜Œ", desc: "Calm, absorbing content comfortably",  stress: "8% (LOW)",   relax: "91% (HIGH)" },
-      STRESS: { color: "rose",    label: "STRESSED",  emoji: "âš ï¸", desc: "High cognitive load detected",        stress: "74% (HIGH)", relax: "22% (LOW)"  },
-      FATIGUE:{ color: "amber",   label: "FATIGUED",  emoji: "ðŸ˜´", desc: "Low alertness, may need a break",    stress: "35% (MOD)",  relax: "48% (MOD)"  },
-      INSUFFICIENT: { color: "slate", label: "UNKNOWN", emoji: "â“", desc: "Insufficient data this session",  stress: "N/A",        relax: "N/A"         }
+      FOCUS:  { color: "emerald", label: "FOCUSED", emoji: "🎯", desc: "Actively engaged in learning material", stress: "12% (LOW)",  relax: "84% (HIGH)" },
+      RELAX:  { color: "teal",    label: "RELAXED",  emoji: "😌", desc: "Calm, absorbing content comfortably",  stress: "8% (LOW)",   relax: "91% (HIGH)" },
+      STRESS: { color: "rose",    label: "STRESSED",  emoji: "⚠️", desc: "High cognitive load detected",        stress: "74% (HIGH)", relax: "22% (LOW)"  },
+      FATIGUE:{ color: "amber",   label: "FATIGUED",  emoji: "😴", desc: "Low alertness, may need a break",    stress: "35% (MOD)",  relax: "48% (MOD)"  },
+      INSUFFICIENT: { color: "slate", label: "UNKNOWN", emoji: "❓", desc: "Insufficient data this session",  stress: "N/A",        relax: "N/A"         }
     };
     const state = stateConfig[student.mentalStatus] || stateConfig["INSUFFICIENT"];
     const canShowEEG = student.consentEEG;
@@ -2284,7 +2284,7 @@ class NeuronexusApp {
           </div>
           <div>
             <div class="font-bold text-slate-100 text-base">${student.name}</div>
-            <div class="text-xs text-slate-400">${student.department} â€¢ ${student.semester}</div>
+            <div class="text-xs text-slate-400">${student.department} • ${student.semester}</div>
           </div>
           <span class="ml-auto text-xs px-2.5 py-1 rounded-full bg-${state.color}-500/15 text-${state.color}-300 border border-${state.color}-500/30 font-semibold">
             ${state.emoji} ${state.label}
@@ -2308,11 +2308,11 @@ class NeuronexusApp {
           </div>
         </div>
         <div class="text-[11px] text-slate-500 italic bg-slate-900/40 px-3 py-2 rounded-lg border border-slate-800">
-          ðŸ§  ${state.desc} â€” These are estimated indicators only. Not for grading or disciplinary use.
+          🧠 ${state.desc} — These are estimated indicators only. Not for grading or disciplinary use.
         </div>
         ` : `
         <div class="p-3 bg-amber-950/30 rounded-xl border border-amber-500/20 text-xs text-amber-300 flex items-center gap-2">
-          <span>ðŸ”’</span>
+          <span>🔒</span>
           <span>This student has not consented to EEG data sharing. Cognitive stress data is withheld per privacy policy.</span>
         </div>
         `}
@@ -2355,9 +2355,9 @@ class NeuronexusApp {
         <!-- Ethics / Privacy Notice -->
         <div class="p-4 bg-amber-950/30 rounded-2xl border border-amber-500/30 mb-8 text-xs text-slate-300">
           <div class="flex items-start gap-3">
-            <span class="text-amber-400 text-lg flex-shrink-0">ðŸ›¡ï¸</span>
+            <span class="text-amber-400 text-lg flex-shrink-0">🛡️</span>
             <div>
-              <div class="font-bold text-amber-300 mb-1">Guardian View â€” Wellbeing Support Only</div>
+              <div class="font-bold text-amber-300 mb-1">Guardian View — Wellbeing Support Only</div>
               <p>This view shows your child's estimated study stress and relaxation indicators to help you support their wellbeing. It is <strong>not a clinical assessment</strong>, not used for grading, and never shared with examiners or institutions. All data is simulated from the current session and clearly labeled as non-diagnostic. Shown only with explicit student and guardian consent.</p>
             </div>
           </div>
@@ -2369,7 +2369,7 @@ class NeuronexusApp {
             <label class="text-sm font-semibold text-slate-200">Select your child:</label>
             <select id="parent-student-selector" onchange="window.neuronexusApp.renderParentStudentCard(this.value)"
                     class="bg-slate-950 text-slate-200 text-sm px-4 py-2.5 rounded-xl border border-amber-500/30 focus:outline-none focus:border-amber-400 cursor-pointer min-w-64">
-              <option value="">â€” Choose a student â€”</option>
+              <option value="">— Choose a student —</option>
               ${allStudents.map(s => `
                 <option value="${s.id}">${s.name} (${s.department})</option>
               `).join('')}
@@ -2381,7 +2381,7 @@ class NeuronexusApp {
         <!-- Student Card Output -->
         <div id="parent-student-card">
           <div class="p-12 bg-slate-900/40 rounded-2xl border border-dashed border-slate-700 text-center text-slate-400">
-            <div class="text-4xl mb-3">ðŸ‘¨â€ðŸ‘©â€ðŸ‘§</div>
+            <div class="text-4xl mb-3">👨‍👩‍👧</div>
             <div class="text-sm">Select your child's name above to view their study wellbeing status.</div>
           </div>
         </div>
@@ -2391,10 +2391,10 @@ class NeuronexusApp {
           <h4 class="font-bold text-slate-200 mb-3 text-sm">Understanding the Signals</h4>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
             ${[
-              {state:"FOCUSED", color:"emerald", emoji:"ðŸŽ¯", desc:"Engaged in learning"},
-              {state:"RELAXED", color:"teal", emoji:"ðŸ˜Œ", desc:"Calm & absorbing content"},
-              {state:"STRESSED", color:"rose", emoji:"âš ï¸", desc:"High cognitive load"},
-              {state:"FATIGUED", color:"amber", emoji:"ðŸ˜´", desc:"Needs rest or break"}
+              {state:"FOCUSED", color:"emerald", emoji:"🎯", desc:"Engaged in learning"},
+              {state:"RELAXED", color:"teal", emoji:"😌", desc:"Calm & absorbing content"},
+              {state:"STRESSED", color:"rose", emoji:"⚠️", desc:"High cognitive load"},
+              {state:"FATIGUED", color:"amber", emoji:"😴", desc:"Needs rest or break"}
             ].map(s => `
               <div class="p-3 bg-slate-950/40 rounded-xl border border-${s.color}-500/20 text-center">
                 <div class="text-xl mb-1">${s.emoji}</div>
@@ -2414,7 +2414,7 @@ class NeuronexusApp {
     if (!studentId) {
       card.innerHTML = `
         <div class="p-12 bg-slate-900/40 rounded-2xl border border-dashed border-slate-700 text-center text-slate-400">
-          <div class="text-4xl mb-3">ðŸ‘¨â€ðŸ‘©â€ðŸ‘§</div>
+          <div class="text-4xl mb-3">👨‍👩‍👧</div>
           <div class="text-sm">Select your child's name above to view their study wellbeing status.</div>
         </div>`;
       return;
@@ -2423,12 +2423,12 @@ class NeuronexusApp {
     if (!student) return;
 
     const stateConfig = {
-      FOCUS:  { color: "emerald", label: "FOCUSED",  emoji: "ðŸŽ¯", desc: "Actively engaged with study material. Your child appears to be in a productive learning state.", stress: "12%",  relax: "84%", stressLevel: "LOW",  relaxLevel: "HIGH",  advice: "Great time! Let them continue â€” this is peak learning mode." },
-      RELAX:  { color: "teal",    label: "RELAXED",  emoji: "ðŸ˜Œ", desc: "Calm and comfortable. Your child is absorbing content without significant pressure.", stress: "8%",   relax: "91%", stressLevel: "LOW",  relaxLevel: "HIGH",  advice: "All good â€” your child is in a positive, receptive state." },
-      STRESS: { color: "rose",    label: "STRESSED", emoji: "âš ï¸", desc: "Elevated cognitive load detected. This may indicate a challenging topic or exam anxiety.", stress: "74%",  relax: "22%", stressLevel: "HIGH", relaxLevel: "LOW",   advice: "Consider checking in after class. A short break or a kind word may help." },
-      FATIGUE:{ color: "amber",   label: "FATIGUED", emoji: "ðŸ˜´", desc: "Reduced alertness. Long sessions or disrupted sleep may be contributing.", stress: "35%",  relax: "48%", stressLevel: "MOD",  relaxLevel: "MOD",   advice: "Encourage a short rest or light activity after this session." },
+      FOCUS:  { color: "emerald", label: "FOCUSED",  emoji: "🎯", desc: "Actively engaged with study material. Your child appears to be in a productive learning state.", stress: "12%",  relax: "84%", stressLevel: "LOW",  relaxLevel: "HIGH",  advice: "Great time! Let them continue — this is peak learning mode." },
+      RELAX:  { color: "teal",    label: "RELAXED",  emoji: "😌", desc: "Calm and comfortable. Your child is absorbing content without significant pressure.", stress: "8%",   relax: "91%", stressLevel: "LOW",  relaxLevel: "HIGH",  advice: "All good — your child is in a positive, receptive state." },
+      STRESS: { color: "rose",    label: "STRESSED", emoji: "⚠️", desc: "Elevated cognitive load detected. This may indicate a challenging topic or exam anxiety.", stress: "74%",  relax: "22%", stressLevel: "HIGH", relaxLevel: "LOW",   advice: "Consider checking in after class. A short break or a kind word may help." },
+      FATIGUE:{ color: "amber",   label: "FATIGUED", emoji: "😴", desc: "Reduced alertness. Long sessions or disrupted sleep may be contributing.", stress: "35%",  relax: "48%", stressLevel: "MOD",  relaxLevel: "MOD",   advice: "Encourage a short rest or light activity after this session." },
     };
-    const state = stateConfig[student.mentalStatus] || { color:"slate", label:"UNKNOWN", emoji:"â“", desc:"Session data unavailable.", stress:"N/A", relax:"N/A", stressLevel:"N/A", relaxLevel:"N/A", advice:"No session data is available." };
+    const state = stateConfig[student.mentalStatus] || { color:"slate", label:"UNKNOWN", emoji:"❓", desc:"Session data unavailable.", stress:"N/A", relax:"N/A", stressLevel:"N/A", relaxLevel:"N/A", advice:"No session data is available." };
 
     // Brainwave frequency simulation data
     const waves = {
@@ -2456,7 +2456,7 @@ class NeuronexusApp {
             </div>
             <div class="flex-1">
               <div class="text-lg font-bold text-slate-100">${student.name}</div>
-              <div class="text-xs text-slate-400">${student.department} â€¢ ${student.semester}</div>
+              <div class="text-xs text-slate-400">${student.department} • ${student.semester}</div>
               <div class="text-xs text-slate-500 mt-0.5">Last updated: Just now (simulated session)</div>
             </div>
             <div class="text-center">
@@ -2511,7 +2511,7 @@ class NeuronexusApp {
 
           <!-- Parental Advice -->
           <div class="p-3 bg-${state.color}-950/30 rounded-xl border border-${state.color}-500/20 flex items-start gap-2">
-            <span class="text-base flex-shrink-0">ðŸ’¡</span>
+            <span class="text-base flex-shrink-0">💡</span>
             <div class="text-xs text-slate-300">${state.advice}</div>
           </div>
         </div>
@@ -2521,13 +2521,13 @@ class NeuronexusApp {
           <div class="text-xs font-mono font-bold text-slate-400 uppercase mb-3">Today's Session Timeline</div>
           <div class="space-y-2">
             ${sessions.map((s,i) => {
-              const sc = stateConfig[s.state] || { color:"slate", emoji:"â“", label:s.state };
+              const sc = stateConfig[s.state] || { color:"slate", emoji:"❓", label:s.state };
               return `
               <div class="flex items-center gap-3 p-2.5 bg-slate-950/40 rounded-lg border border-slate-800">
                 <span class="text-xs font-mono text-slate-500 w-20">${s.time}</span>
                 <span class="text-base">${sc.emoji}</span>
                 <span class="text-xs font-semibold text-${sc.color}-400">${sc.label}</span>
-                <span class="text-xs text-slate-400">â€” ${s.note}</span>
+                <span class="text-xs text-slate-400">— ${s.note}</span>
                 ${i === 1 ? '<span class="ml-auto text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">LIVE</span>' : ''}
               </div>`;
             }).join('')}
@@ -2536,7 +2536,7 @@ class NeuronexusApp {
 
         <!-- Disclaimer -->
         <div class="text-[11px] text-slate-500 italic text-center p-3 bg-slate-900/30 rounded-xl border border-slate-800">
-          ðŸ›¡ï¸ All readings are estimated study wellbeing indicators from session data â€” they are non-clinical, non-diagnostic, and never used for academic evaluation or grading. Shown only with your child's explicit consent.
+          🛡️ All readings are estimated study wellbeing indicators from session data — they are non-clinical, non-diagnostic, and never used for academic evaluation or grading. Shown only with your child's explicit consent.
         </div>
       </div>
     `;
@@ -2582,9 +2582,9 @@ class NeuronexusApp {
               </div>
 
               <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
-                <span class="text-xs font-bold text-amber-400">â˜… ${m.rating} (${m.reviewsCount})</span>
+                <span class="text-xs font-bold text-amber-400">★ ${m.rating} (${m.reviewsCount})</span>
                 <button onclick="window.neuronexusApp.openMentorModal('${m.id}')" class="btn-primary text-xs px-3.5 py-1.5">
-                  Request Session â†’
+                  Request Session →
                 </button>
               </div>
             </div>
@@ -2607,7 +2607,7 @@ class NeuronexusApp {
         <div class="w-full max-w-md bg-slate-900 rounded-2xl border border-slate-700 p-6 md:p-8">
           <div class="flex justify-between items-center mb-4">
             <h3 class="text-lg font-bold text-white">Book Mentorship Session</h3>
-            <button onclick="document.getElementById('mentor-modal-placeholder').innerHTML=''" class="text-slate-400 hover:text-white font-bold">âœ•</button>
+            <button onclick="document.getElementById('mentor-modal-placeholder').innerHTML=''" class="text-slate-400 hover:text-white font-bold">✕</button>
           </div>
           <div class="text-xs text-slate-300 mb-4">
             Requesting 1-on-1 guidance with <strong class="text-teal-300">${m.name}</strong> (${m.company}).

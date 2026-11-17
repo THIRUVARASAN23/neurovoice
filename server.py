@@ -24,6 +24,8 @@ from eeg_processor import eeg_service, HARDWARE_CONFIG
 PORT = 8000
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PUBLIC_DIR = os.path.join(BASE_DIR, "public")
+if not os.path.exists(PUBLIC_DIR):
+    PUBLIC_DIR = os.path.join(BASE_DIR, "frontend") if os.path.exists(os.path.join(BASE_DIR, "frontend")) else BASE_DIR
 
 class NeuronexusHandler(http.server.BaseHTTPRequestHandler):
     def log_message(self, format, *args):
@@ -92,6 +94,14 @@ class NeuronexusHandler(http.server.BaseHTTPRequestHandler):
         mime_type, _ = mimetypes.guess_type(full_path)
         if not mime_type:
             mime_type = "application/octet-stream"
+        # Add charset=utf-8 for all text types to prevent browser
+        # from defaulting to Latin-1 when serving UTF-8 encoded files
+        _TEXT_TYPES = (
+            "text/html", "text/css", "text/javascript",
+            "application/javascript", "application/x-javascript", "text/plain"
+        )
+        if any(mime_type.startswith(t) for t in _TEXT_TYPES) and "charset" not in mime_type:
+            mime_type = mime_type + "; charset=utf-8"
         
         try:
             with open(full_path, "rb") as f:
